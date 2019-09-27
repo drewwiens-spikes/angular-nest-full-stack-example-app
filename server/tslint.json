@@ -1,0 +1,39 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended"],
+  "jsRules": {
+    "no-unused-expression": true
+  },
+  "rules": {
+    "ordered-imports": [
+      true,
+      {
+        "module-source-path": "full",
+        "grouped-imports": true,
+        "groups": [
+          {
+            "name": "relative-paths",
+            "match": "^[.].*",
+            "order": 2
+          },
+          {
+            "name": "libraries",
+            "match": ".*",
+            "order": 1
+          }
+        ],
+        "named-imports-order": "any",
+        "import-sources-order": "any"
+      }
+    ],
+    "quotemark": [true, "single"],
+    "member-access": [false],
+    "max-line-length": [true, 150],
+    "member-ordering": [false],
+    "interface-name": [false],
+    "arrow-parens": false,
+    "object-literal-sort-keys": false,
+    "max-classes-per-file": false
+  },
+  "rulesDirectory": []
+}
