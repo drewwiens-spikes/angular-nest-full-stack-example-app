@@ -23,7 +23,8 @@
     "rxjs": "6.6.6"
   },
   "devDependencies": {
-    "@types/express": "4.17.11",
+    "@types/express": "^4.17.11",
+    "@types/express-http-proxy": "^1.6.1",
     "@types/node": "14.14.31",
     "jest": "26.6.3",
     "prettier": "2.2.1",

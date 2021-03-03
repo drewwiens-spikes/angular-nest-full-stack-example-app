@@ -591,6 +591,13 @@
   dependencies:
     "@types/node" "*"
 
+"@types/express-http-proxy@^1.6.1":
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@types/express-http-proxy/-/express-http-proxy-1.6.1.tgz#b505ecdf51bf6d5b361fd8bfa777baabe4427a44"
+  integrity sha512-FjuKVtGaT3ccHD7uFr7vKDsn3shEEc/Upo2YnVsTfoDPuUbCV/GIsinG7gbrkzcIYELqh+8hYmn/rEfqMQA/9g==
+  dependencies:
+    "@types/express" "*"
+
 "@types/express-serve-static-core@^4.17.18":
   version "4.17.18"
   resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.17.18.tgz#8371e260f40e0e1ca0c116a9afcd9426fa094c40"
@@ -600,7 +607,7 @@
     "@types/qs" "*"
     "@types/range-parser" "*"
 
-"@types/express@4.17.11":
+"@types/express@*", "@types/express@^4.17.11":
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/@types/express/-/express-4.17.11.tgz#debe3caa6f8e5fcda96b47bd54e2f40c4ee59545"
   integrity sha512-no+R6rW60JEc59977wIxreQVsIEOAYwgCqldrA/vkpCnbD7MqTefO97lmoBe4WE0F156bC4uLSP1XHDOySnChg==
