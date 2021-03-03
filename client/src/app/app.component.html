@@ -96,6 +96,14 @@
         </ng-container>
       </td>
     </ng-container>
+    <!-- Origin Column -->
+    <ng-container matColumnDef="origin">
+      <td mat-cell *matCellDef="let element">{{ element.origin | uppercase }}</td>
+    </ng-container>
+    <!-- Destination Column -->
+    <ng-container matColumnDef="dest">
+      <td mat-cell *matCellDef="let element">{{ element.dest | uppercase }}</td>
+    </ng-container>
     <!-- Price Column -->
     <ng-container matColumnDef="price">
       <td mat-cell *matCellDef="let element">{{ element.price | currency }}</td>
@@ -108,7 +116,7 @@
     <ng-container matColumnDef="arrive">
       <td mat-cell *matCellDef="let element">{{ element.arrive | date:'short' }}</td>
     </ng-container>
-    <tr mat-row *matRowDef="let row; columns: ['mode', 'depart', 'arrive', 'price'];"></tr>
+    <tr mat-row *matRowDef="let row; columns: ['mode', 'origin', 'dest', 'depart', 'arrive', 'price'];"></tr>
   </table>
 
 </mat-card>

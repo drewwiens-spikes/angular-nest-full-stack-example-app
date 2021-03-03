@@ -17,7 +17,7 @@ export class FaresController {
   async findAll(@Query() query: ListAllEntities): Promise<FareWithMode[]> {
     console.warn('QUERY:', query);
     // Insert a delay to simulate database queries:
-    await new Promise(resolve => setTimeout(() => resolve(), 2000));
+    await new Promise<void>(resolve => setTimeout(() => resolve(), 2000));
     // Return the results from the service:
     return this.svc.findAll(query);
   }

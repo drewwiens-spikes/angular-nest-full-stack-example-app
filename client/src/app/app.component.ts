@@ -4,7 +4,7 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 import { MatAutocomplete } from '@angular/material/autocomplete';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { FormControl, Validators } from '@angular/forms';
-import { isEqual } from 'lodash';
+import { isEqual } from 'lodash-es';
 
 import { cities, cityValidator, getOptionsObs } from './util';
 import { Fare } from './types';
